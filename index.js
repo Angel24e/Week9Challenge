@@ -14,7 +14,12 @@ const questions = [
         name: "description"
     },
     {
-        type: "checkbox",
+        type: "input",
+        message: "Give me a brief explanation on how to install your application.",
+        name: "installation"
+    },
+    {
+        type: "list",
         message: "Pick a license for your website",
         choices: ["Big license","little license","right size license"],
         name: "license"
@@ -35,7 +40,7 @@ inquirer
  .prompt(questions)
   .then(answers => {
     console.log(`So it's ${answers.snapchat} and ${answers.email}`);
-    createReadMe(questions);
+    createReadMe(answers);
 });
 
 const createReadMe = data => {
@@ -47,6 +52,8 @@ const createReadMe = data => {
  - [Questions](#Questions)
 ## Description
  ${data.description}
+## Installation
+ ${data.installation}
 ## License
  ${data.license}
 ## Questions
