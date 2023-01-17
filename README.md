@@ -11,3 +11,5 @@
  right size license
 ## Questions
  If you have any questions for me here is my github account link https://github.com/Angel24e also this is my email angel4esc@gmail.com. Feel free to reach out.
+
+[video](Untitled_%20Jan%2016,%202023%207_37%20PM.webm)
